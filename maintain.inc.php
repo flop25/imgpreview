@@ -6,7 +6,7 @@ function plugin_install()
     $q = '
 INSERT INTO ' . CONFIG_TABLE . ' (param,value,comment)
 	VALUES
-	("imgpreview" , "" , "max-width#max-height");';
+	("imgpreview" , "600#600" , "max-width#max-height");';
     pwg_query($q);
 
 }
