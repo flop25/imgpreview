@@ -1,0 +1,1 @@
+Ce plugin permet d'avoir un aperçu de l'image au survol de la miniature.

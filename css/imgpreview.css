@@ -7,3 +7,7 @@
     padding: 12px;
     z-index: 900;
 }
+#tooltip img {
+	max-height:600px;
+	max-width:600px;
+}
