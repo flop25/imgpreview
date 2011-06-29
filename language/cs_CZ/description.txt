@@ -1,0 +1,1 @@
+Tento plugin umožňuje zobrazit náhled fotografie, pokud najedeme pomocí myši kurzorem nad miniaturu.
