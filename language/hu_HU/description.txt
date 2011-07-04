@@ -1,0 +1,1 @@
+A bővítmény segítségével a bélyegképre illesztett egérkurzor alatt a kép előnézeti képe jelenik meg.
