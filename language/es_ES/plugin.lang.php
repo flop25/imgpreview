@@ -1,9 +1,9 @@
 <?php
-$lang['imgp_max_width'] = 'maximum width of the picture';
-$lang['imgp_max_height'] = 'maximum height of the picture';
-$lang['imgp_send'] = 'Submit !';
+$lang['imgp_max_width'] = 'anchura m&acute;axima de la fotograf&acute;ia';
+$lang['imgp_max_height'] = 'altura m&acute;axima de la fotograf&acute;ia';
+$lang['imgp_send'] = 'Guardar';
 
-$lang['imgp_conf_updated'] = 'The config has been updated';
+$lang['imgp_conf_updated'] = 'Se ha guardado la configuraci&acute;on';
 
 
 
