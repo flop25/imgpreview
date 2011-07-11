@@ -1,1 +1,1 @@
-This plugin enable a preview when the mouse in over a thumbnail.
+Este pulg—n habilita la vista previa al pasar el cursor sobre la miniatura.
