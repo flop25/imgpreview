@@ -1,5 +1,5 @@
 #tooltip {
-    background: url("../images/ajax-loader.gif") no-repeat scroll 12px 12px #E6E4D8;
+    background: url("loading.gif") no-repeat scroll 12px 12px #E6E4D8;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 3px 3px 7px #000000;
     min-height: 32px;
