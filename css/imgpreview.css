@@ -5,9 +5,16 @@
     min-height: 32px;
     min-width: 32px;
     padding: 12px;
-    z-index: 900;
+    z-index: 1000;
 }
 #tooltip img {
 	max-height:600px;
 	max-width:600px;
+}
+/* Text below image */
+#tooltip span {
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 10px 0 3px 0;
 }

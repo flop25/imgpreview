@@ -6,41 +6,28 @@
  * Updated: 09/02/09
  * @author James Padolsey
  * @version 0.22
- */
-/*
-(function(c){c.expr[':'].linkingToImage=function(a,g,e){return!!(c(a).attr(e[3])&&c(a).attr(e[3]).match(/\.(gif|jpe?g|png|bmp)$/i))};c.fn.imgPreview=function(j){var b=c.extend({imgCSS:{},distanceFromCursor:{top:10,left:10},preloadImages:true,onShow:function(){},onHide:function(){},onLoad:function(){},containerID:'imgPreviewContainer',containerLoadingClass:'loading',thumbPrefix:'',srcAttr:'href'},j),d=c('<div/>').attr('id',b.containerID).append('<img/>').hide().css('position','absolute').appendTo('body'),f=c('img',d).css(b.imgCSS),h=this.filter(':linkingToImage('+b.srcAttr+')');function i(a){return a.replace(/(\/?)([^\/]+)$/,'$1'+b.thumbPrefix+'$2')}if(b.preloadImages){(function(a){var g=new Image(),e=arguments.callee;g.src=i(c(h[a]).attr(b.srcAttr));g.onload=function(){h[a+1]&&e(a+1)}})(0)}h.mousemove(function(a){d.css({top:a.pageY+b.distanceFromCursor.top+'px',left:a.pageX+b.distanceFromCursor.left+'px'})}).hover(function(){var a=this;d.addClass(b.containerLoadingClass).show();f.load(function(){d.removeClass(b.containerLoadingClass);f.show();b.onLoad.call(f[0],a)}).attr('src',i(c(a).attr(b.srcAttr)));b.onShow.call(d[0],a)},function(){d.hide();f.unbind('load').attr('src','').hide();b.onHide.call(d[0],this)});return this}})(jQuery);
-*/
-/*
- * imgPreview jQuery plugin
- * Copyright (c) 2009 James Padolsey
- * j@qd9.co.uk | http://james.padolsey.com
- * Dual licensed under MIT and GPL.
- * Updated: 09/02/09
- * @author James Padolsey
- * @version 0.22
  *
  *
  * !!!!!!! -> This plugin contains ADDITIONS. 'considerBorders' param. You will have to add
  * it yourself to newest version, if you use this param
- */
+*/
 (function($){
-
+    
     $.expr[':'].linkingToImage = function(elem, index, match){
         // This will return true if the specified attribute contains a valid link to an image:
         return !! ($(elem).attr(match[3]) && $(elem).attr(match[3]).match(/\.(gif|jpe?g|png|bmp)$/i));
     };
-
+    
     $.fn.imgPreview = function(userDefinedSettings){
-
+        
         var s = $.extend({
-
+            
             /* DEFAULTS */
-            minWidth: 32,
-            imgSrcHide: 'about:blank',
+            
             // CSS to be applied to image:
             imgCSS: {},
             // Distance between cursor and preview:
-            distanceFromCursor: {top:20, left:20},
+            distanceFromCursor: {top:10, left:10},
             // Boolean, whether or not to preload images:
             preloadImages: true,
             // Callback: run when link is hovered: container is shown:
@@ -57,27 +44,25 @@
             thumbPrefix: '',
             // Where to retrieve the image from:
             srcAttr: 'href',
-            //The script moves the box depending on window borders
-            // Added by Ujeen
-            considerBorders: 'false'
-
+						considerBorders:'false'
+            
         }, userDefinedSettings),
-
+        
         $container = $('<div/>').attr('id', s.containerID)
                         .append('<img/>').hide()
                         .css('position','absolute')
                         .appendTo('body'),
-
+            
         $img = $('img', $container).css(s.imgCSS),
-
+        
         // Get all valid elements (linking to images / ATTR with image link):
         $collection = this.filter(':linkingToImage(' + s.srcAttr + ')');
-
+        
         // Re-usable means to add prefix (from setting):
         function addPrefix(src) {
             return src.replace(/(\/?)([^\/]+)$/,'$1' + s.thumbPrefix + '$2');
         }
-
+        
         if (s.preloadImages) {
             (function(i){
                 var tempIMG = new Image(),
@@ -88,7 +73,7 @@
                 };
             })(0);
         }
-
+        
         $collection
             .mousemove(function(e){
                 // 'considerBorders' functionality
@@ -119,15 +104,15 @@
                   }
                   // #--considerBorders
                 } else {
-                  $container.css({
-                      top: e.pageY + s.distanceFromCursor.top + 'px',
-                      left: e.pageX + s.distanceFromCursor.left + 'px'
-                  });
-                }
-
+                $container.css({
+                    top: e.pageY + s.distanceFromCursor.top + 'px',
+                    left: e.pageX + s.distanceFromCursor.left + 'px'
+                });
+								}
+                
             })
             .hover(function(){
-
+                
                 var link = this;
                 $container
                     .addClass(s.containerLoadingClass)
@@ -136,32 +121,23 @@
                     .load(function(){
                         $container.removeClass(s.containerLoadingClass);
                         $img.show();
-                        $container.width($img.width());
                         s.onLoad.call($img[0], link);
                     })
-                    .attr( 'src' , addPrefix($(link).attr(s.srcAttr)) )
-                    .$(function(){
-                      // 'considerBorders' functionality
-                      if (s.considerBorders == 'true') {
-                        $(this).css({'display':'none'});
-                      }
-                      // #--considerBorders
-                    });
-                    
+                    .attr( 'src' , addPrefix($(link).attr(s.srcAttr)) );
+
                 s.onShow.call($container[0], link);
-
+                
             }, function(){
-
+                
                 $container.hide();
-                $img.unbind('load').attr('src', s.imgSrcHide).hide();
-                $container.width(s.minWidth);
+                $img.unbind('load').attr('src','').hide();
                 s.onHide.call($container[0], this);
-
+                
             });
-         
+        
         // Return full selection, not $collection!
         return this;
-
+        
     };
-
+    
 })(jQuery);
