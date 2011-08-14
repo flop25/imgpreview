@@ -5,9 +5,9 @@ $lang['imgp_send'] = 'Küldés !';
 
 $lang['imgp_conf_updated'] = 'A konfiguráció frissítése sikeres.';
 
-$lang['imgp_showtitle'] = 'Display the picture name';/** TODO **/
-$lang['imgp_opacity'] = 'Opacity on mouseover';/** TODO **/
-$lang['imgp_howitworks'] = '<a href="http://www.planete-flop.fr">Flop25</a> -the creator of this plugin- recommends :
+$lang['imgp_showtitle'] = 'Kép nevének megjelenítése';
+$lang['imgp_opacity'] = 'Áttetszőség ha a kurzor a bélyegképen van';
+$lang['imgp_howitworks'] = '<a href="http://www.planete-flop.fr">Flop25</a> -a bővítmény készítője ajánlja :
 <ul>
 <li><a href="http://piwigo.org/ext/extension_view.php?eid=190">PWG Stuff</a> by P@t : this plugin adds modules on your gallery.</li>
 <li><a href="http://piwigo.org/ext/extension_view.php?eid=527">Icons Set</a> by Flop25 : this plugin allows you to use other icons for any themes</li>
