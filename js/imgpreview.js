@@ -29,7 +29,7 @@
             // Distance between cursor and preview:
             distanceFromCursor: {top:10, left:10},
             // Boolean, whether or not to preload images:
-            preloadImages: true,
+            preloadImages: false,
             // Callback: run when link is hovered: container is shown:
             onShow: function(){},
             // Callback: container is hidden:
