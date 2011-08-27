@@ -1,26 +1,27 @@
 <?php
 $lang['imgp_max_width'] = 'larghezza massima della foto';
 $lang['imgp_max_height'] = 'altezza massima della foto';
+$lang['imgp_showtitle'] = 'Visualizzare il nome dell\'immagine';
+$lang['imgp_opacity'] = 'Effetto trasparente durante il sorvolo';
 $lang['imgp_send'] = 'Invio!';
 
 $lang['imgp_conf_updated'] = 'La configurazione è stata aggiornata';
 
 
-$lang['imgp_showtitle'] = 'Display the picture name';/** TODO **/
-$lang['imgp_opacity'] = 'Opacity on mouseover';/** TODO **/
-$lang['imgp_howitworks'] = '<a href="http://www.planete-flop.fr">Flop25</a> -the creator of this plugin- recommends :
+
+$lang['imgp_howitworks'] = '
+L\'autore di questo plugin <a href="http://www.planete-flop.fr">Flop25</a> vi raccomanda :
 <ul>
-<li><a href="http://piwigo.org/ext/extension_view.php?eid=190">PWG Stuff</a> by P@t : this plugin adds modules on your gallery.</li>
-<li><a href="http://piwigo.org/ext/extension_view.php?eid=527">Icons Set</a> by Flop25 : this plugin allows you to use other icons for any themes</li>
-<li><a href="http://piwigo.org/ext/extension_view.php?eid=231">Flop Style</a> by Flop25 : flop_style is a "template extension" and enable changes of a small part of Piwigo such as categories display</li>
-<li><a href="http://piwigo.org/ext/">and much more on piwigo.org</a></li>
+<li><a href="http://piwigo.org/ext/extension_view.php?eid=190">PWG Stuff</a> by P@t : questo plugin permette di aggiungere dei blocchi (blocco personale - ultimi commenti - Immagine a caso - ... ) alla vostra galleria</li>
+<li><a href="http://piwigo.org/ext/extension_view.php?eid=527">Icons Set</a> by Flop25 : Questo plugin vi permette di attribuire un set di icone a qualsiasi tema</li>
+<li><a href="http://piwigo.org/ext/extension_view.php?eid=231">Flop Style</a> by Flop25 : flop_style è un "Template (modello)" o "Template-extension" : permette di modificare una piccola parte della vostra galleria come gli album o le miniature senza cambiare tema</li>
+<li><a href="http://piwigo.org/ext/">e moltre altre estensioni su Piwigo.org</a></li>
 </ul>
 <br>
-For designers : the popup is customizable with the id #tooltip (with img or span for the text)
+Per i designers : sappiate che la popup può essere intramente personalizzata con l\'id #tooltip (img per l\'immagine o span per il testo)
 <br>
 <br>
-This plugin uses a modified version of :<br>
- 
+Questo plugin usa una versione modificata di di :<br>
  * imgPreview jQuery plugin<br>
  * Copyright (c) 2009 James Padolsey<br>
  * j@qd9.co.uk | http://james.padolsey.com<br>
@@ -28,7 +29,11 @@ This plugin uses a modified version of :<br>
  * Updated: 09/02/09<br>
  * @author James Padolsey<br>
  * @version 0.22<br>
-';/** TODO **/
+ <br>
+<br>
+<a href="http://it.piwigo.org/forum/">In caso di problemi, il forum di Piwigo vi potra aiutare</a>
+';
+
 
 
 ?>
