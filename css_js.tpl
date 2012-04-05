@@ -10,7 +10,7 @@ jQuery('.thumbnails a, #thumbnails a').imgPreview({
     // When container is shown:
     onShow: function(link){
       {/literal}{if $imgpreview.title=="true"}{literal}
-      jQuery('<span>' + jQuery(link).children().attr("title") + '</span>').appendTo(this);
+      jQuery('<span>' + jQuery(link).attr("data-tittle") + '</span>').appendTo(this);
       
       {/literal}{/if}{if $imgpreview.opacity=="true"}{literal}
       jQuery(link).stop().animate({opacity:0.4});

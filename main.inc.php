@@ -51,10 +51,10 @@ function imgpreview_prefilter_thumbnails($content, &$smarty)
   $search = 'href="{$thumbnail.URL}"';
   if ( defined('PHPWG_VERSION') and strpos(PHPWG_VERSION, "2.4")!==false )
   {
-  $replacement = 'href="{$thumbnail.URL}" {define_derivative name=\'derivative_imgprev\' width=$imgpreview.width height=$imgpreview.height crop=false}{assign var=d_imgprev value=$pwg->derivative($derivative_imgprev, $thumbnail.src_image)} imgsrc="{$d_imgprev->get_url()}"';
+  $replacement = 'href="{$thumbnail.URL}" {define_derivative name=\'derivative_imgprev\' width=$imgpreview.width height=$imgpreview.height crop=false}{assign var=d_imgprev value=$pwg->derivative($derivative_imgprev, $thumbnail.src_image)} imgsrc="{$d_imgprev->get_url()}" data-tittle="{$thumbnail.NAME}"';
   }
   else {
-    $replacement = 'href="{$thumbnail.URL}" imgsrc="{$thumbnail.FILE_PATH}"';
+    $replacement = 'href="{$thumbnail.URL}" imgsrc="{$thumbnail.FILE_PATH}" data-tittle="{$thumbnail.NAME}"';
   }
   $content= str_replace($search, $replacement, $content);
 
