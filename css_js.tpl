@@ -7,6 +7,7 @@ jQuery('.thumbnails a, #thumbnails a').imgPreview({
     containerID: 'tooltip',
 		srcAttr: 'imgsrc',
 		considerBorders:'true',
+    {/literal}{if $imgpreview.preloadImages=="true"}preloadImages: true,{/if}{literal}
     // When container is shown:
     onShow: function(link){
       {/literal}{if $imgpreview.title=="true"}{literal}

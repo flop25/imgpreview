@@ -1,6 +1,7 @@
 <?php
 $lang['imgp_max_width'] = 'attēla maksimālais platums';
 $lang['imgp_max_height'] = 'attēla maksimālais augstums';
+$lang['imgp_preloadImages'] = 'Preload the pictures (not recommend on slow host)';/** TODO **/
 $lang['imgp_send'] = 'Iesniegt !';
 
 $lang['imgp_conf_updated'] = 'Konfigurācija ir atjaunināta';

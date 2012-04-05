@@ -3,6 +3,7 @@ $lang['imgp_max_width'] = 'largeur maximum de l\'image';
 $lang['imgp_max_height'] = 'hauteur maximum de l\'image';
 $lang['imgp_showtitle'] = 'Afficher le nom de l\'image';
 $lang['imgp_opacity'] = 'Faire un effet de transparence au survol';
+$lang['imgp_preloadImages'] = 'Pré-chargez les images (non recommendé pour les hébergeurs lents)';
 $lang['imgp_send'] = 'Envoyer !';
 
 $lang['imgp_conf_updated'] = 'La config a été mise à jour';

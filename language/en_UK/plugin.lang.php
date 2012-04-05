@@ -3,6 +3,7 @@ $lang['imgp_max_width'] = 'maximum width of the picture';
 $lang['imgp_max_height'] = 'maximum height of the picture';
 $lang['imgp_showtitle'] = 'Display the picture name';
 $lang['imgp_opacity'] = 'Opacity on mouseover';
+$lang['imgp_preloadImages'] = 'Preload the pictures (not recommend on slow host)';
 $lang['imgp_send'] = 'Submit !';
 
 $lang['imgp_conf_updated'] = 'The config has been updated';

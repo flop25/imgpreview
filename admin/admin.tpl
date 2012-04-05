@@ -13,6 +13,8 @@
     {'imgp_showtitle'|@translate}<input type="checkbox" name="show-title" {$SHOW_TITTLE}><br />
     {'imgp_opacity'|@translate}<input type="checkbox" name="opacity" {$OPACITY}><br />
     <br />
+    {'imgp_preloadImages'|@translate}<input type="checkbox" name="preloadImages" {$preloadImages}><br />
+    <br />
     <input name="envoi_config" type="hidden" value="imgpreview" />
     <input type="hidden" name="pwg_token" value="{$PWG_TOKEN}">
     <input type="submit" name="option_imgp" id="button" value="{'imgp_send'|@translate}" />

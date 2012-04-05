@@ -6,6 +6,7 @@ $lang['imgp_send'] = 'Зберегти';
 $lang['imgp_conf_updated'] = 'Налаштування збережені';
 $lang['imgp_showtitle'] = 'Відображення назви світлини';/** TODO **/
 $lang['imgp_opacity'] = 'Прозорість при наведенні курсору миші';/** TODO **/
+$lang['imgp_preloadImages'] = 'Preload the pictures (not recommend on slow host)';/** TODO **/
 $lang['imgp_howitworks'] = '<a href="http://www.planete-flop.fr">Flop25</a> - автор цього плаґіну, рекомендує :
 <ul>
 <li><a href="http://piwigo.org/ext/extension_view.php?eid=190">PWG Stuff</a> автор P@t : цей плаґін додає модулі у вашу галерею.</li>

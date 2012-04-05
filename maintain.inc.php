@@ -6,7 +6,7 @@ function plugin_install()
     $q = '
 INSERT INTO ' . CONFIG_TABLE . ' (param,value,comment)
 	VALUES
-	("imgpreview" , "400#600#true#true" , "max-width#max-height#title#opacity");';
+	("imgpreview" , "400#600#true#true#false" , "max-width#max-height#title#opacity#preloadImages");';
     pwg_query($q);
 
 }
@@ -30,7 +30,7 @@ function plugin_activate()
 	else {
 		load_conf_from_db();
 
-		if (count(explode("#" , $conf['imgpreview']))!=4)
+		if (count(explode("#" , $conf['imgpreview']))!=5)
 		{
 			pwg_query('DELETE FROM '.CONFIG_TABLE.' WHERE param IN (\'imgpreview\')');
 			pwg_query($q);

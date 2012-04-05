@@ -44,7 +44,7 @@
             thumbPrefix: '',
             // Where to retrieve the image from:
             srcAttr: 'href',
-						considerBorders:'false'
+            considerBorders:'false'
             
         }, userDefinedSettings),
         

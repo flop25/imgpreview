@@ -29,7 +29,7 @@ function imgpreview_thumbnails($tpl_thumbnails_var)
 	global $template, $conf ;
 
 	$conf_imgp = explode("#" , $conf['imgpreview']);
-	$imgpreview=array( 'width' => $conf_imgp[0], 'height' => $conf_imgp[1], 'title' => $conf_imgp[2], 'opacity' => $conf_imgp[3] );
+	$imgpreview=array( 'width' => $conf_imgp[0], 'height' => $conf_imgp[1], 'title' => $conf_imgp[2], 'opacity' => $conf_imgp[3] , 'preloadImages' => $conf_imgp[4] );
 	$template->assign(array(
 		'imgpreview' => $imgpreview
 	));
