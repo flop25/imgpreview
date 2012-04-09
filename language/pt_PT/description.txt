@@ -1,0 +1,1 @@
+Esta extens&atilde;o permite activar a pr&eacute;-visualiza&ccedil;&atilde;o quando o rato paira sobre uma miniatura.
