@@ -7,7 +7,7 @@ $lang['imgp_conf_updated'] = 'A konfiguráció frissítése sikeres.';
 
 $lang['imgp_showtitle'] = 'Kép nevének megjelenítése';
 $lang['imgp_opacity'] = 'Áttetszőség ha a kurzor a bélyegképen van';
-$lang['imgp_preloadImages'] = 'Preload the pictures (not recommend on slow host)';/** TODO **/
+$lang['imgp_preloadImages'] = 'Képek előtöltése (nem ajánlott lassú host esetén)';
 $lang['imgp_howitworks'] = '<a href="http://www.planete-flop.fr">Flop25</a> -a bővítmény készítője ajánlja :
 <ul>
 <li><a href="http://piwigo.org/ext/extension_view.php?eid=190">PWG Stuff</a> by P@t : this plugin adds modules on your gallery.</li>
