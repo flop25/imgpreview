@@ -1,0 +1,1 @@
+Aquest complement habilita la vista pr&egrave;via al passar amb el cursor per sobre de la miniatura.
