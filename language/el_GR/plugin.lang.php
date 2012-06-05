@@ -27,4 +27,24 @@ $lang['imgp_opacity'] = 'Αδιαφάνεια στο mouseover';
 $lang['imgp_preloadImages'] = 'προ-φορτώνει τις εικόνες (δεν συνιστάται σε αργούς servers)';
 $lang['imgp_send'] = 'Υποβολή!';
 $lang['imgp_showtitle'] = 'Εμφανίζει το όνομα εικόνα';
+$lang['imgp_howitworks'] = '<a href="http://www.planete-flop.fr">Flop25</a> -ο δημιουργός αυτού του πρόσθετου, συνιστά:
+<ul>
+<li><a href="http://piwigo.org/ext/extension_view.php?eid=190">PWG Stuff</a> by P@t : Αυτό το πρόσθετο προσθέτει ενότητες στην γκαλερί σας.</li>
+<li><a href="http://piwigo.org/ext/extension_view.php?eid=527">Icons Set</a> by Flop25 : Αυτό το πρόσθετο σας επιτρέπει να χρησιμοποιείτε άλλα εικονίδια για οποιαδήποτε θέματα</li>
+<li><a href="http://piwigo.org/ext/extension_view.php?eid=231">Flop Style</a> by Flop25 : το flop_style είναι ένα «πρότυπο επέκταση" και επιτρέπει αλλαγές ενός μικρού μέρους Piwigo, όπως το πως εμφανίζονται οι κατηγορίες.</li>
+<li><a href="http://piwigo.org/ext/">και πολά άλλα στο piwigo.org</a></li>
+</ul>
+<br>
+Για τους σχεδιαστές : το αναδυόμενο παράθυρο είναι προσαρμόσιμο με το id #tooltip (με το img ή το span για το κείμενο)
+<br>
+<br>
+Αυτό το πρόσθετο χρησιμοποιεί μια τροποποιημένη έκδοση του:<br>
+ 
+ * imgPreview jQuery plugin<br>
+ * Copyright (c) 2009 James Padolsey<br>
+ * j@qd9.co.uk | http://james.padolsey.com<br>
+ * Διπλή άδεια σύμφωνα με MIT και GPL.<br>
+ * Ενημερώθηκε: 09/02/09<br>
+ * @author James Padolsey<br>
+ * @version 0.22<br>';
 ?>
