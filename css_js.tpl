@@ -3,6 +3,7 @@
 {footer_script require='jquery.imgpreview'}
 {if isset($imgpreview)}
 {literal}
+function apply_imgPreview() { 
 jQuery('.thumbnails a, #thumbnails a').imgPreview({
     containerID: 'tooltip',
 		srcAttr: 'imgsrc',
@@ -33,7 +34,9 @@ jQuery('.thumbnails a, #thumbnails a').imgPreview({
       {/literal}{/if}{literal}
     }
 });
-
+};
+jQuery(document).ready(apply_imgPreview); 
+jQuery(window).bind("RVTS_loaded", apply_imgPreview); 
 {/literal}
 {/if}
 {/footer_script}
