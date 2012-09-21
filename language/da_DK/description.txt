@@ -1,0 +1,1 @@
+Plugin'en aktiverer en forhåndsvisning, når mousen svæver over et miniaturebillede.
