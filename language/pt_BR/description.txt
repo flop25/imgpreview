@@ -1,0 +1,1 @@
+Esse plugin permite pré-visualizar uma foto ao passar o mouse sobre sua miniatura
