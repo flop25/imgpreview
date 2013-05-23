@@ -4,9 +4,8 @@ $lang['imgp_max_height'] = 'максимальная высота фотогра
 $lang['imgp_send'] = 'Сохранить';
 
 $lang['imgp_conf_updated'] = 'Настройки сохранены';
-$lang['imgp_showtitle'] = 'Display the picture name';/** TODO **/
-$lang['imgp_opacity'] = 'Opacity on mouseover';/** TODO **/
-$lang['imgp_preloadImages'] = 'Preload the pictures (not recommend on slow host)';/** TODO **/
+$lang['imgp_showtitle'] = 'Отображение названия изображения';
+$lang['imgp_preloadImages'] = 'Предварительная загрузка изображений (не рекомендуется при слабом/медленном хостинге)';
 $lang['imgp_howitworks'] = '<a href="http://www.planete-flop.fr">Flop25</a> -the creator of this plugin- recommends :
 <ul>
 <li><a href="http://piwigo.org/ext/extension_view.php?eid=190">PWG Stuff</a> by P@t : this plugin adds modules on your gallery.</li>
