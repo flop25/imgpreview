@@ -1,0 +1,2 @@
+Dette programtillegget aktivere en forhåndsvisning når musen holdes over et miniatyrbilde.
+
