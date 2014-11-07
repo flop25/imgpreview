@@ -1,0 +1,1 @@
+Tämä laajennus mahdollistaa esikatselun siirtämällä hiiren osoittimen pikkukuvan päälle.
