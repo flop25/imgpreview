@@ -45,3 +45,4 @@ $lang['imgp_opacity'] = 'Läpinäkyvyys hiiren osoittimen ollessa kuvan pääll�
 $lang['imgp_preloadImages'] = 'Esilataa kuvat (ei suositella hitaassa ympäristössä)';
 $lang['imgp_send'] = 'Lähetä';
 $lang['imgp_showtitle'] = 'Näytä kuvan nimi';
+$lang['imgp_conf_updated'] = 'Asetukset päivitetty';
