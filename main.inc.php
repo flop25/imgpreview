@@ -6,22 +6,12 @@ Description: give an image preview when the mouve is over a thumbnail
 Plugin URI: http://phpwebgallery.net/ext/extension_view.php?eid=551
 Author: Flop25
 Author URI: http://www.planete-flop.fr/
+Has Settings: webmaster
 */
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 define('IMGP_DIR' , basename(dirname(__FILE__)));
 define('IMGP_PATH' , PHPWG_PLUGINS_PATH . IMGP_DIR . '/');
-add_event_handler('get_admin_plugin_menu_links', 'imgpreview_lien_menu');
-function imgpreview_lien_menu($menu)
-{
-	
-    array_push(
-			$menu,
-			array('NAME' => 'Image Preview',
-            'URL'  => get_admin_plugin_menu_link(get_root_url().'plugins/'.IMGP_DIR.'/admin/admin.php')
-						)
-		);
-    return $menu;
-}
+
 /** thumbnails.tpl **/
 add_event_handler('loc_end_index_thumbnails', 'imgpreview_thumbnails');
 function imgpreview_thumbnails($tpl_thumbnails_var)
@@ -45,7 +35,7 @@ function imgpreview_thumbnails($tpl_thumbnails_var)
 	return $tpl_thumbnails_var;
 }
 
-function imgpreview_prefilter_thumbnails($content, &$smarty)
+function imgpreview_prefilter_thumbnails($content)
 {
 	global $template;
   $search = 'href="{$thumbnail.URL}"';
