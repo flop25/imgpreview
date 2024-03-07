@@ -45,7 +45,6 @@ Doplnok používa modifikované verzie:<br>
 $lang['imgp_max_height'] = 'maximálna výška fotky';
 $lang['imgp_max_width'] = 'maximálna šírka fotky';
 $lang['imgp_opacity'] = 'Neprehľadnosť pri prechode myši';
-$lang['imgp_preloadImages'] = 'predhrať fotku (neodporúčané pri pomalom hostingu)';
+$lang['imgp_preloadImages'] = 'Prednačítať obrázky (neodporúčané pri pomalom hostingu)';
 $lang['imgp_send'] = 'Poslať!';
 $lang['imgp_showtitle'] = 'Zobraziť meno fotky';
-?>
